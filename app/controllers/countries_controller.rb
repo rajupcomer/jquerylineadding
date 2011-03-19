@@ -82,7 +82,7 @@ class CountriesController < ApplicationController
   end
 
 def add_states
-render :partial => states
+render :partial => 'states', :locals => {:state_object => State.new}
 end
 
 end
