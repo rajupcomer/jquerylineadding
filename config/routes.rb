@@ -2,8 +2,10 @@ Redodemo2::Application.routes.draw do
   resources :cities
 
   resources :states
+  match "countries/add_states" => "countries#add_states"
 
   resources :countries
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

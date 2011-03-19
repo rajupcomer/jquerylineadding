@@ -13,8 +13,17 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name,:id=> "country_name_id" %>
   </div>
+
+<div class="add_state">
+  <%= add_state_link("add states") %>
+</div>
+
+<div id="result">
+
+</div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

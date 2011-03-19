@@ -80,4 +80,9 @@ class CountriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+def add_states
+render :partial => states
+end
+
 end
